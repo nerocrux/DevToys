@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="DevToys.Views.Tools.PKCE.PKCEToolPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:DevToys.UI.Controls"
+    mc:Ignorable="d"
+    NavigationCacheMode="Required">
+
+    <StackPanel Margin="0,0,0,16" Spacing="12">
+        <StackPanel.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition IsStaggeringEnabled="True" FromVerticalOffset="50"/>
+            </TransitionCollection>
+        </StackPanel.ChildrenTransitions>
+
+    <controls:CustomTextBox
+            Header="{x:Bind ViewModel.Strings.Input}"
+            Height="150"
+            AcceptsReturn="True"
+            Text="{x:Bind ViewModel.InputValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+    <controls:CustomTextBox
+            Header="{x:Bind ViewModel.Strings.Output}"
+            IsReadOnly="True"
+            Text="{x:Bind ViewModel.OutputValue, Mode=OneWay}"/>
+    </StackPanel>
+</Page>

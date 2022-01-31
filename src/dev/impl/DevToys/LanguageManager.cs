@@ -38,6 +38,7 @@ namespace DevToys
         private readonly MainPageStrings _mainpage = new MainPageStrings();
         private readonly MarkdownPreviewStrings _markdownpreview = new MarkdownPreviewStrings();
         private readonly NumberBaseConverterStrings _numberbaseconverter = new NumberBaseConverterStrings();
+        private readonly PKCEStrings _pkce = new PKCEStrings();
         private readonly PngJpgCompressorStrings _pngjpgcompressor = new PngJpgCompressorStrings();
         private readonly RegExStrings _regex = new RegExStrings();
         private readonly SearchResultStrings _searchresult = new SearchResultStrings();
@@ -126,6 +127,11 @@ namespace DevToys
         /// Gets the <see cref="NumberBaseConverterStrings"/>.
         /// </summary>
         public NumberBaseConverterStrings NumberBaseConverter => _numberbaseconverter;
+
+        /// <summary>
+        /// Gets the <see cref="PKCEStrings"/>.
+        /// </summary>
+        public PKCEStrings PKCE => _pkce;
 
         /// <summary>
         /// Gets the <see cref="PngJpgCompressorStrings"/>.
@@ -1272,6 +1278,46 @@ namespace DevToys
         {
             return string.Format(ValueOverflow, param0);
         }
+
+        /// <summary>
+        /// Gets the resource Description.
+        /// </summary>
+        public string Description => _resources.GetString("Description");
+
+        /// <summary>
+        /// Gets the resource SearchDisplayName.
+        /// </summary>
+        public string SearchDisplayName => _resources.GetString("SearchDisplayName");
+    }
+
+    public class PKCEStrings : ObservableObject
+    {
+        private readonly ResourceLoader _resources = ResourceLoader.GetForViewIndependentUse("PKCE");
+
+        /// <summary>
+        /// Gets the resource AccessibleName.
+        /// </summary>
+        public string AccessibleName => _resources.GetString("AccessibleName");
+
+        /// <summary>
+        /// Gets the resource ConversionTitle.
+        /// </summary>
+        public string ConversionTitle => _resources.GetString("ConversionTitle");
+
+        /// <summary>
+        /// Gets the resource MenuDisplayName.
+        /// </summary>
+        public string MenuDisplayName => _resources.GetString("MenuDisplayName");
+
+        /// <summary>
+        /// Gets the resource Input.
+        /// </summary>
+        public string Input => _resources.GetString("Input");
+
+        /// <summary>
+        /// Gets the resource Output.
+        /// </summary>
+        public string Output => _resources.GetString("Output");
 
         /// <summary>
         /// Gets the resource Description.
