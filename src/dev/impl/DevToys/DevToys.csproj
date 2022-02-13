@@ -72,6 +72,9 @@
     <Compile Include="ViewModels\Tools\Graphic\PngJpgCompressor\PngJpgCompressorToolViewModel.cs" />
     <Compile Include="ViewModels\Tools\Formatters\FormattersGroupToolProvider.cs" />
     <Compile Include="ViewModels\Tools\GroupToolViewModelBase.cs" />
+    <Compile Include="ViewModels\Tools\SamlTools\SamlToolsGroupToolProvider.cs" />
+    <Compile Include="ViewModels\Tools\SamlTools\DeflateInflateBase64EncoderDecoder\DeflateInflateBase64EncoderDecoderToolProvider.cs" />
+    <Compile Include="ViewModels\Tools\SamlTools\DeflateInflateBase64EncoderDecoder\DeflateInflateBase64EncoderDecoderToolViewModel.cs" />
     <Compile Include="ViewModels\Tools\SearchResult\SearchResultToolProvider.cs" />
     <Compile Include="ViewModels\Tools\Text\TextGroupToolProvider.cs" />
     <Compile Include="Views\Tools\AllTools\AllToolsToolPage.xaml.cs">
@@ -266,6 +269,7 @@
     <Content Include="Assets\Icons\Base64.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Icons\Saml.svg" />
     <Content Include="Assets\Icons\TextDiff.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -432,6 +436,9 @@
     <Compile Include="Views\Tools\EncodersDecoders\JwtDecoderEncoder\JwtDecoderEncoderToolPage.xaml.cs">
       <DependentUpon>JwtDecoderEncoderToolPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Tools\SamlTools\DeflateInflateBase64EncoderDecoder\DeflateInflateBase64EncoderDecoderToolPage.xaml.cs">
+      <DependentUpon>DeflateInflateBase64EncoderDecoderToolPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Tools\Text\MarkdownPreview\MarkdownPreviewToolPage.xaml.cs">
       <DependentUpon>MarkdownPreviewToolPage.xaml</DependentUpon>
     </Compile>
@@ -478,6 +485,17 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="DevToys_TemporaryKey.pfx" />
+    <PRIResource Include="Strings\zh-Hans\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\ru-RU\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\pt-PT\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\pl-PL\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\id-ID\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\fr-FR\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\es-ES\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\es-AR\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\cs-CZ\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\de-DE\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\en-US\DeflateInflateBase64EncoderDecoder.resw" />
     <PRIResource Include="Strings\en-US\PKCE.resw" />
     <PRIResource Include="Strings\zh-Hans\PKCE.resw" />
     <PRIResource Include="Strings\ru-RU\PKCE.resw" />
@@ -827,6 +845,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Tools\EncodersDecoders\JwtDecoderEncoder\JwtDecoderEncoderToolPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tools\SamlTools\DeflateInflateBase64EncoderDecoder\DeflateInflateBase64EncoderDecoderToolPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

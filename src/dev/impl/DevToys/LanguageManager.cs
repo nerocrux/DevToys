@@ -28,6 +28,7 @@ namespace DevToys
         private readonly Base64EncoderDecoderStrings _base64encoderdecoder = new Base64EncoderDecoderStrings();
         private readonly ColorBlindnessSimulatorStrings _colorblindnesssimulator = new ColorBlindnessSimulatorStrings();
         private readonly CommonStrings _common = new CommonStrings();
+        private readonly DeflateInflateBase64EncoderDecoderStrings _deflateinflatebase64encoderdecoder = new DeflateInflateBase64EncoderDecoderStrings();
         private readonly GuidGeneratorStrings _guidgenerator = new GuidGeneratorStrings();
         private readonly HashGeneratorStrings _hashgenerator = new HashGeneratorStrings();
         private readonly HtmlEncoderDecoderStrings _htmlencoderdecoder = new HtmlEncoderDecoderStrings();
@@ -77,6 +78,11 @@ namespace DevToys
         /// Gets the <see cref="CommonStrings"/>.
         /// </summary>
         public CommonStrings Common => _common;
+
+        /// <summary>
+        /// Gets the <see cref="DeflateInflateBase64EncoderDecoderStrings"/>.
+        /// </summary>
+        public DeflateInflateBase64EncoderDecoderStrings DeflateInflateBase64EncoderDecoder => _deflateinflatebase64encoderdecoder;
 
         /// <summary>
         /// Gets the <see cref="GuidGeneratorStrings"/>.
@@ -501,6 +507,76 @@ namespace DevToys
         /// Gets the resource Undo.
         /// </summary>
         public string Undo => _resources.GetString("Undo");
+    }
+
+    public class DeflateInflateBase64EncoderDecoderStrings : ObservableObject
+    {
+        private readonly ResourceLoader _resources = ResourceLoader.GetForViewIndependentUse("DeflateInflateBase64EncoderDecoder");
+
+        /// <summary>
+        /// Gets the resource AccessibleName.
+        /// </summary>
+        public string AccessibleName => _resources.GetString("AccessibleName");
+
+        /// <summary>
+        /// Gets the resource Ascii.
+        /// </summary>
+        public string Ascii => _resources.GetString("Ascii");
+
+        /// <summary>
+        /// Gets the resource ConfigurationTitle.
+        /// </summary>
+        public string ConfigurationTitle => _resources.GetString("ConfigurationTitle");
+
+        /// <summary>
+        /// Gets the resource ConversionDecode.
+        /// </summary>
+        public string ConversionDecode => _resources.GetString("ConversionDecode");
+
+        /// <summary>
+        /// Gets the resource ConversionDescription.
+        /// </summary>
+        public string ConversionDescription => _resources.GetString("ConversionDescription");
+
+        /// <summary>
+        /// Gets the resource ConversionEncode.
+        /// </summary>
+        public string ConversionEncode => _resources.GetString("ConversionEncode");
+
+        /// <summary>
+        /// Gets the resource ConversionTitle.
+        /// </summary>
+        public string ConversionTitle => _resources.GetString("ConversionTitle");
+
+        /// <summary>
+        /// Gets the resource MenuDisplayName.
+        /// </summary>
+        public string MenuDisplayName => _resources.GetString("MenuDisplayName");
+
+        /// <summary>
+        /// Gets the resource EncodingDescription.
+        /// </summary>
+        public string EncodingDescription => _resources.GetString("EncodingDescription");
+
+        /// <summary>
+        /// Gets the resource InputTitle.
+        /// </summary>
+        public string InputTitle => _resources.GetString("InputTitle");
+
+        /// <summary>
+        /// Gets the resource OutputTitle.
+        /// </summary>
+        public string OutputTitle => _resources.GetString("OutputTitle");
+
+        /// <summary>
+        /// Gets the resource Description.
+        /// </summary>
+        public string Description => _resources.GetString("Description");
+
+        /// <summary>
+        /// Gets the resource SearchDisplayName.
+        /// </summary>
+        public string SearchDisplayName => _resources.GetString("SearchDisplayName");
     }
 
     public class GuidGeneratorStrings : ObservableObject
@@ -2034,6 +2110,16 @@ namespace DevToys
         /// Gets the resource GraphicDisplayName.
         /// </summary>
         public string GraphicDisplayName => _resources.GetString("GraphicDisplayName");
+
+        /// <summary>
+        /// Gets the resource SamlToolsAccessibleName.
+        /// </summary>
+        public string SamlToolsAccessibleName => _resources.GetString("SamlToolsAccessibleName");
+
+        /// <summary>
+        /// Gets the resource SamlToolsDisplayName.
+        /// </summary>
+        public string SamlToolsDisplayName => _resources.GetString("SamlToolsDisplayName");
 
         /// <summary>
         /// Gets the resource TextAccessibleName.

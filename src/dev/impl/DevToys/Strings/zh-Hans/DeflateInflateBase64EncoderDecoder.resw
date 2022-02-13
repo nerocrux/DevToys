@@ -117,46 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ConvertersAccessibleName" xml:space="preserve">
-    <value>Конвертирование</value>
+  <data name="AccessibleName" xml:space="preserve">
+    <value>Base 64 Encoder and Decoder tool with Deflate / Inflate</value>
   </data>
-  <data name="ConvertersDisplayName" xml:space="preserve">
-    <value>Конвертирование</value>
+  <data name="Ascii" xml:space="preserve">
+    <value>ASCII</value>
   </data>
-  <data name="EncodersDecodersAccessibleName" xml:space="preserve">
-    <value>Преобразование</value>
+  <data name="ConfigurationTitle" xml:space="preserve">
+    <value>Configuration</value>
   </data>
-  <data name="EncodersDecodersDisplayName" xml:space="preserve">
-    <value>Преобразование</value>
+  <data name="ConversionDecode" xml:space="preserve">
+    <value>Base 64 Decode + Inflate</value>
   </data>
-  <data name="FormattersAccessibleName" xml:space="preserve">
-    <value>Форматирование</value>
+  <data name="ConversionDescription" xml:space="preserve">
+    <value>Select which conversion mode you want to use</value>
   </data>
-  <data name="FormattersDisplayName" xml:space="preserve">
-    <value>Форматирование</value>
+  <data name="ConversionEncode" xml:space="preserve">
+    <value>Deflate + Base 64 Encode</value>
   </data>
-  <data name="GeneratorsAccessibleName" xml:space="preserve">
-    <value>Генерирование</value>
+  <data name="ConversionTitle" xml:space="preserve">
+    <value>Conversion</value>
   </data>
-  <data name="GeneratorsDisplayName" xml:space="preserve">
-    <value>Генерирование</value>
+  <data name="MenuDisplayName" xml:space="preserve">
+    <value>Base64 Encode/Decode + Deflate/Inflate</value>
   </data>
-  <data name="GraphicAccessibleName" xml:space="preserve">
-    <value>Графика</value>
+  <data name="EncodingDescription" xml:space="preserve">
+    <value>Select which encoding do you want to use</value>
   </data>
-  <data name="GraphicDisplayName" xml:space="preserve">
-    <value>Графика</value>
+  <data name="InputTitle" xml:space="preserve">
+    <value>Input</value>
   </data>
-  <data name="SamlToolsAccessibleName" xml:space="preserve">
-    <value>SAML Tools</value>
+  <data name="OutputTitle" xml:space="preserve">
+    <value>Output</value>
   </data>
-  <data name="SamlToolsDisplayName" xml:space="preserve">
-    <value>SAML Tools</value>
+  <data name="Description" xml:space="preserve">
+    <value>Base 64 Encoder and Decoder tool with Deflate / Inflate</value>
   </data>
-  <data name="TextAccessibleName" xml:space="preserve">
-    <value>Текст</value>
-  </data>
-  <data name="TextDisplayName" xml:space="preserve">
-    <value>Текст</value>
+  <data name="SearchDisplayName" xml:space="preserve">
+    <value>Base 64 Encoder and Decoder tool with Deflate / Inflate</value>
   </data>
 </root>

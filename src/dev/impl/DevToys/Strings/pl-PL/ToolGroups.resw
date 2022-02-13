@@ -147,6 +147,12 @@
   <data name="GraphicDisplayName" xml:space="preserve">
     <value>Graphic</value>
   </data>
+  <data name="SamlToolsAccessibleName" xml:space="preserve">
+    <value>SAML Tools</value>
+  </data>
+  <data name="SamlToolsDisplayName" xml:space="preserve">
+    <value>SAML Tools</value>
+  </data>
   <data name="TextAccessibleName" xml:space="preserve">
     <value>Text</value>
   </data>
