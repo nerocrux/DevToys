@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AccessibleName" xml:space="preserve">
-    <value>Nástroj pro náhled Mardown</value>
+    <value>Nástroj pro náhled Mardownu</value>
   </data>
   <data name="Configuration" xml:space="preserve">
     <value>Konfigurace</value>
@@ -149,5 +149,8 @@
   </data>
   <data name="SearchDisplayName" xml:space="preserve">
     <value>Náhled Markdown</value>
+  </data>
+  <data name="SearchKeywords" xml:space="preserve">
+    <value>MD</value>
   </data>
 </root>

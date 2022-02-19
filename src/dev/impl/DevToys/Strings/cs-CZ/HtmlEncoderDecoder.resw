@@ -148,12 +148,15 @@
     <value>Výstup</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Kódovat a dekódovat všechny příslušné znaky do odpovídajících HTML entit</value>
+    <value>Kódování a dekódování znaků do odpovídajících HTML entit</value>
   </data>
   <data name="MenuDisplayName" xml:space="preserve">
     <value>HTML</value>
   </data>
   <data name="SearchDisplayName" xml:space="preserve">
     <value>Kodér / Dekodér HTML</value>
+  </data>
+  <data name="SearchKeywords" xml:space="preserve">
+    <value />
   </data>
 </root>

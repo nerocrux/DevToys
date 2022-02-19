@@ -124,10 +124,10 @@
     <value>配置</value>
   </data>
   <data name="MenuDisplayName" xml:space="preserve">
-    <value>JSON 字符串格式化工具</value>
+    <value>JSON</value>
   </data>
   <data name="FourSpaces" xml:space="preserve">
-    <value>4个空格</value>
+    <value>4 个空格</value>
   </data>
   <data name="Indentation" xml:space="preserve">
     <value>缩进</value>
@@ -139,18 +139,21 @@
     <value>压缩</value>
   </data>
   <data name="OneTab" xml:space="preserve">
-    <value>1个制表键</value>
+    <value>1 个制表键</value>
   </data>
   <data name="Output" xml:space="preserve">
     <value>输出</value>
   </data>
   <data name="TwoSpaces" xml:space="preserve">
-    <value>2个空格</value>
+    <value>2 个空格</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>缩进或压缩 JSON 字符串数据</value>
+    <value>格式化或压缩 JSON 字符串数据</value>
   </data>
   <data name="SearchDisplayName" xml:space="preserve">
     <value>JSON 字符串格式化工具</value>
+  </data>
+  <data name="SearchKeywords" xml:space="preserve">
+    <value />
   </data>
 </root>

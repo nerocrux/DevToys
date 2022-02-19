@@ -127,7 +127,7 @@
     <value>Selecciona que modo de conversión deseas utilizar</value>
   </data>
   <data name="ConversionTitle" xml:space="preserve">
-    <value>conversión</value>
+    <value>Conversión</value>
   </data>
   <data name="MenuDisplayName" xml:space="preserve">
     <value>Json &lt;&gt; Yaml</value>
@@ -161,5 +161,8 @@
   </data>
   <data name="SearchDisplayName" xml:space="preserve">
     <value>Conversor Json &lt;&gt; Yaml</value>
+  </data>
+  <data name="SearchKeywords" xml:space="preserve">
+    <value />
   </data>
 </root>

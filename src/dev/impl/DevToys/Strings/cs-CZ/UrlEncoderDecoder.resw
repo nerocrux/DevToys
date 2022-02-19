@@ -148,12 +148,15 @@
     <value>Výstup</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Kódovat nebo dekódovat všechny příslušné znaky na odpovídající URL entity</value>
+    <value>Kódování a dekódování znaků do odpovídajících URL entit</value>
   </data>
   <data name="MenuDisplayName" xml:space="preserve">
     <value>URL</value>
   </data>
   <data name="SearchDisplayName" xml:space="preserve">
     <value>Kodér / Dekodér URL</value>
+  </data>
+  <data name="SearchKeywords" xml:space="preserve">
+    <value />
   </data>
 </root>

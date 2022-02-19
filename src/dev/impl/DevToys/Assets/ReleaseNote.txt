@@ -1,10 +1,13 @@
 ﻿🎉 New Features
-  • Color Blindness Simulator!
-  • Lorem Ipsum Generator!
+  • You can now install DevToys with Chocolatey!
 👏 Improvements
-  • Added Indonesian translation
-  • Added Spanish (Spain & Argentine) translation
-  • Added German translation
-  • Minor UI update in encoders / decoders
+  • Added Korean translation
+  • Updated Japanese, Italian, Indonesian, Traditional Chinese
+  • Search bar now support alternative keywords
+  • SQL Formater is faster an use less memory
+  • Minor UI update in JWT Decoder
+  • Number Base Converter UX updated
 🐛 Bug Fixes
-  • N/A
+  • Crash with text fields and folder selector
+  • Crash with decimals in JSON <> YAML
+  • Bugs impacting RegEx Tester, Base64 Encoder / Decoder, JSON Formatter, XML Formatter, JSON <> YAML, Number Base Converter

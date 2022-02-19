@@ -127,7 +127,7 @@
     <value>深色</value>
   </data>
   <data name="MenuDisplayName" xml:space="preserve">
-    <value>Markdown 预览工具</value>
+    <value>Markdown 预览</value>
   </data>
   <data name="Input" xml:space="preserve">
     <value>Markdown 文本输入</value>
@@ -145,9 +145,12 @@
     <value>选择使用哪个主题来预览 Markdown</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>使用类似github的渲染预览Markdown文档</value>
+    <value>使用类似 Github 的渲染预览 Markdown 文档</value>
   </data>
   <data name="SearchDisplayName" xml:space="preserve">
     <value>Markdown 预览工具</value>
+  </data>
+  <data name="SearchKeywords" xml:space="preserve">
+    <value>MD</value>
   </data>
 </root>
