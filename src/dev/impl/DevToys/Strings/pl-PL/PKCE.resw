@@ -138,4 +138,7 @@
   <data name="SearchDisplayName" xml:space="preserve">
     <value>PKCE Code Challenge Converter (S256)</value>
   </data>
+  <data name="SearchKeywords" xml:space="preserve">
+    <value />
+  </data>
 </root>

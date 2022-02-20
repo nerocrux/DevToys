@@ -26,6 +26,8 @@ namespace DevToys.ViewModels.Tools.PKCE
 
         public string AccessibleName => LanguageManager.Instance.PKCE.AccessibleName;
 
+        public string? SearchKeywords => LanguageManager.Instance.PKCE.SearchKeywords;
+
         public TaskCompletionNotifier<IconElement> IconSource => CreateSvgIcon("PKCE.svg");
 
         [ImportingConstructor]
