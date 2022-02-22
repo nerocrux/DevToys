@@ -546,6 +546,12 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <PRIResource Include="Strings\en-US\DeflateInflateBase64EncoderDecoder - コピー.resw" />
+    <PRIResource Include="Strings\zh-Hant\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\ko-KR\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\ja-JP\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\it-IT\DeflateInflateBase64EncoderDecoder.resw" />
+    <PRIResource Include="Strings\hu-HU\DeflateInflateBase64EncoderDecoder.resw" />
     <PRIResource Include="Strings\*\*.resw" />
     <Page Include="Themes\Custom.xaml">
       <Generator>MSBuild:Compile</Generator>

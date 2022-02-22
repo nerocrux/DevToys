@@ -658,6 +658,101 @@ namespace DevToys
         public string Undo => _resources.GetString("Undo");
     }
 
+    public class DeflateInflateBase64EncoderDecoder : ObservableObject
+    {
+        private readonly ResourceLoader _resources = ResourceLoader.GetForViewIndependentUse("DeflateInflateBase64EncoderDecoder - コピー");
+
+        /// <summary>
+        /// Gets the resource AccessibleName.
+        /// </summary>
+        public string AccessibleName => _resources.GetString("AccessibleName");
+
+        /// <summary>
+        /// Gets the resource Ascii.
+        /// </summary>
+        public string Ascii => _resources.GetString("Ascii");
+
+        /// <summary>
+        /// Gets the resource ConfigurationTitle.
+        /// </summary>
+        public string ConfigurationTitle => _resources.GetString("ConfigurationTitle");
+
+        /// <summary>
+        /// Gets the resource ConversionDecode.
+        /// </summary>
+        public string ConversionDecode => _resources.GetString("ConversionDecode");
+
+        /// <summary>
+        /// Gets the resource ConversionDescription.
+        /// </summary>
+        public string ConversionDescription => _resources.GetString("ConversionDescription");
+
+        /// <summary>
+        /// Gets the resource ConversionEncode.
+        /// </summary>
+        public string ConversionEncode => _resources.GetString("ConversionEncode");
+
+        /// <summary>
+        /// Gets the resource ConversionTitle.
+        /// </summary>
+        public string ConversionTitle => _resources.GetString("ConversionTitle");
+
+        /// <summary>
+        /// Gets the resource MenuDisplayName.
+        /// </summary>
+        public string MenuDisplayName => _resources.GetString("MenuDisplayName");
+
+        /// <summary>
+        /// Gets the resource EncodingDescription.
+        /// </summary>
+        public string EncodingDescription => _resources.GetString("EncodingDescription");
+
+        /// <summary>
+        /// Gets the resource InputTitle.
+        /// </summary>
+        public string InputTitle => _resources.GetString("InputTitle");
+
+        /// <summary>
+        /// Gets the resource OutputTitle.
+        /// </summary>
+        public string OutputTitle => _resources.GetString("OutputTitle");
+
+        /// <summary>
+        /// Gets the resource Description.
+        /// </summary>
+        public string Description => _resources.GetString("Description");
+
+        /// <summary>
+        /// Gets the resource SearchDisplayName.
+        /// </summary>
+        public string SearchDisplayName => _resources.GetString("SearchDisplayName");
+
+        /// <summary>
+        /// Gets the resource SearchKeywords.
+        /// </summary>
+        public string SearchKeywords => _resources.GetString("SearchKeywords");
+
+        /// <summary>
+        /// Gets the resource URLEncodeDecodeOff.
+        /// </summary>
+        public string URLEncodeDecodeOff => _resources.GetString("URLEncodeDecodeOff");
+
+        /// <summary>
+        /// Gets the resource URLEncodeDecodeOn.
+        /// </summary>
+        public string URLEncodeDecodeOn => _resources.GetString("URLEncodeDecodeOn");
+
+        /// <summary>
+        /// Gets the resource URLEncodeDecodeOnOffDescription.
+        /// </summary>
+        public string URLEncodeDecodeOnOffDescription => _resources.GetString("URLEncodeDecodeOnOffDescription");
+
+        /// <summary>
+        /// Gets the resource URLEncodeDecodeOnOffTitle.
+        /// </summary>
+        public string URLEncodeDecodeOnOffTitle => _resources.GetString("URLEncodeDecodeOnOffTitle");
+    }
+
     public class DeflateInflateBase64EncoderDecoderStrings : ObservableObject
     {
         private readonly ResourceLoader _resources = ResourceLoader.GetForViewIndependentUse("DeflateInflateBase64EncoderDecoder");
@@ -731,6 +826,26 @@ namespace DevToys
         /// Gets the resource SearchKeywords.
         /// </summary>
         public string SearchKeywords => _resources.GetString("SearchKeywords");
+
+        /// <summary>
+        /// Gets the resource URLEncodeDecodeOff.
+        /// </summary>
+        public string URLEncodeDecodeOff => _resources.GetString("URLEncodeDecodeOff");
+
+        /// <summary>
+        /// Gets the resource URLEncodeDecodeOn.
+        /// </summary>
+        public string URLEncodeDecodeOn => _resources.GetString("URLEncodeDecodeOn");
+
+        /// <summary>
+        /// Gets the resource URLEncodeDecodeOnOffDescription.
+        /// </summary>
+        public string URLEncodeDecodeOnOffDescription => _resources.GetString("URLEncodeDecodeOnOffDescription");
+
+        /// <summary>
+        /// Gets the resource URLEncodeDecodeOnOffTitle.
+        /// </summary>
+        public string URLEncodeDecodeOnOffTitle => _resources.GetString("URLEncodeDecodeOnOffTitle");
     }
 
     public class GuidGeneratorStrings : ObservableObject

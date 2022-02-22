@@ -44,6 +44,15 @@ namespace DevToys.ViewModels.Tools.DeflateInflateBase64EncoderDecoder
 
         private const string DefaultEncoding = "UTF-8";
 
+        /// <summary>
+        /// Whether the tool should execute URL Encode/Decode or not.
+        /// </summary>
+        private static readonly SettingDefinition<bool> URLEncodeDecodeMode
+            = new(
+                name: $"{nameof(DeflateInflateBase64EncoderDecoderToolViewModel)}.{nameof(URLEncodeDecodeMode)}",
+                isRoaming: true,
+                defaultValue: true);
+
         private readonly IMarketingService _marketingService;
         private readonly ISettingsProvider _settingsProvider;
         private readonly Queue<string> _conversionQueue = new();
@@ -116,6 +125,24 @@ namespace DevToys.ViewModels.Tools.DeflateInflateBase64EncoderDecoder
                 if (!string.Equals(_settingsProvider.GetSetting(Encoder), value, StringComparison.Ordinal))
                 {
                     _settingsProvider.SetSetting(Encoder, value);
+                    OnPropertyChanged();
+                    QueueConversionCalculation();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the encode decode on/off mode.
+        /// </summary>
+        internal bool IsURLEncodeDecodeMode
+        {
+            get => _settingsProvider.GetSetting(URLEncodeDecodeMode);
+            set
+            {
+                ThreadHelper.ThrowIfNotOnUIThread();
+                if (_settingsProvider.GetSetting(URLEncodeDecodeMode) != value)
+                {
+                    _settingsProvider.SetSetting(URLEncodeDecodeMode, value);
                     OnPropertyChanged();
                     QueueConversionCalculation();
                 }
@@ -215,7 +242,12 @@ namespace DevToys.ViewModels.Tools.DeflateInflateBase64EncoderDecoder
 
                     // Base 64 Encode + URL Encode
                     Encoding encoder = GetEncoder();
-                    encoded = HttpUtility.UrlEncode(Convert.ToBase64String(compressed));
+                    encoded = Convert.ToBase64String(compressed);
+
+                    if (IsURLEncodeDecodeMode)
+                    {
+                        encoded = HttpUtility.UrlEncode(encoded);
+                    }
                 }
             }
             catch (XmlException ex)
@@ -244,8 +276,14 @@ namespace DevToys.ViewModels.Tools.DeflateInflateBase64EncoderDecoder
 
             try
             {
+
                 // URL Decode + Base 64 Decode
-                var bytes = Convert.FromBase64String(HttpUtility.UrlDecode(data));
+                if (IsURLEncodeDecodeMode)
+                {
+                    data = HttpUtility.UrlDecode(data);
+                }
+
+                var bytes = Convert.FromBase64String(data);
                 using (var output = new MemoryStream())
                 {
                     using (var input = new MemoryStream(bytes))

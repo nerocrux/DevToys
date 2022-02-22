@@ -10,19 +10,6 @@
     NavigationCacheMode="Disabled">
 
     <Grid x:Name="RootGrid" RowSpacing="12" Margin="0,0,0,16">
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup>
-                <VisualState>
-                    <VisualState.StateTriggers>
-                        <ex:IsCompactOverlayModeTrigger TargetElement="{x:Bind}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="EncodingSetting.Visibility" Value="Collapsed" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition IsStaggeringEnabled="True" FromVerticalOffset="50"/>
@@ -48,6 +35,18 @@
                     Style="{StaticResource RightAlignedToggleSwitchStyle}"
                     OnContent="{x:Bind ViewModel.Strings.ConversionEncode}" OffContent="{x:Bind ViewModel.Strings.ConversionDecode}"
                     IsOn="{x:Bind ViewModel.IsEncodeMode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </controls:ExpandableSettingControl>
+            <controls:ExpandableSettingControl
+                Grid.Row="2"
+                Title="{x:Bind ViewModel.Strings.URLEncodeDecodeOnOffTitle}"
+                Description="{x:Bind ViewModel.Strings.URLEncodeDecodeOnOffDescription}">
+                <controls:ExpandableSettingControl.Icon>
+                    <FontIcon Glyph="&#xF18D;" />
+                </controls:ExpandableSettingControl.Icon>
+                <ToggleSwitch 
+                    Style="{StaticResource RightAlignedToggleSwitchStyle}"
+                    OnContent="{x:Bind ViewModel.Strings.URLEncodeDecodeOn}" OffContent="{x:Bind ViewModel.Strings.URLEncodeDecodeOff}"
+                    IsOn="{x:Bind ViewModel.IsURLEncodeDecodeMode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             </controls:ExpandableSettingControl>
         </StackPanel>
 
